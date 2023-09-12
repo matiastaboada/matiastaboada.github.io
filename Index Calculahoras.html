@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+         <header>
+        <center> <img src="https://i.ibb.co/GQ8b5X6/show-Logo-copia.png" alt="Logo"> </center>
+            </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select, input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #horaConvertida {
+            font-size: 20px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Diferencia Horaria</h1>
+
+    <div class="container">
+        <label for="horaPartida">Hora de partida:</label>
+        <input type="text" id="horaPartida" placeholder="HH:MM">
+        <select id="ampmPartida">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+
+        <label for="paisPartida">País de partida:</label>
+        <select id="paisPartida">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Colombia">Colombia</option>
+            <option value="México">México</option>
+        </select>
+
+        <label for="paisDestino">País de destino:</label>
+        <select id="paisDestino">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Colombia">Colombia</option>
+            <option value="México">México</option>
+        </select>
+
+        <button onclick="calcularDiferenciaHoraria()">Calcular</button>
+
+        <p>La hora convertida es: <span id="horaConvertida"></span></p>
+    </div>
+
+    <script>
+        function calcularDiferenciaHoraria() {
+            // ... (el código JavaScript sigue siendo el mismo)
+        }
+    </script>
+    <footer><center>
+        <p>Desarrollado por el área de talento y cultura.</p>
+    </center></footer>
+</body>
+</html>
